@@ -53,6 +53,7 @@ cd demo
 scrapy genspider demos demos.com
 ```
 目录结构大概为：
+```
 demo
   +---- scrapy.cfg  这个文件主要存项目的配置信息
   |
@@ -63,9 +64,10 @@ demo
   +---- settings.py 爬虫的配置文件，这才是爬虫相关的配置文件，不要 混淆
   |
   +---- spiders      这个是爬虫目录，里边主要是爬虫文件，编写爬虫规则之类的
-
+```
 这里大概介绍一下scrapy，想详细了解的可以去看一下python3网络爬虫开发实战，貌似是 崔庆才大佬的，就介绍到这里
 ## 爬虫代码目录结构
+```
 推特爬虫
   +---twitterspider                                         
   |     |
@@ -98,7 +100,7 @@ demo
   +---scrapy.cfg
   |     
   +---README.MD
-
+```
 ### 使用方法
 这里有个```check_proxy.py```,检测终端代理，
 ```
@@ -110,7 +112,7 @@ python check_proxy.py
 第二道检测闸检测中...
 200
 放行,代理可用！
-···
+```
 爬虫之前先要把redis启起来,直接
 ```
 redis-server
